@@ -68,10 +68,10 @@ export function Sidebar() {
 
       {/* New Screening CTA */}
       <div className="px-6 py-4">
-        <button className="btn-primary w-full">
+        <NavLink to="/new-screening" className="btn-primary w-full flex items-center justify-center gap-2" style={{ textDecoration: 'none' }}>
           <Plus size={18} />
           New Screening
-        </button>
+        </NavLink>
       </div>
 
       {/* Bottom Nav */}

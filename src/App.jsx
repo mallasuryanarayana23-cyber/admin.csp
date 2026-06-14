@@ -8,6 +8,8 @@ const AssessmentsPage = lazy(() => import('./pages/Assessments/AssessmentsPage')
 const ReportsPage = lazy(() => import('./pages/Reports/ReportsPage').then(module => ({ default: module.ReportsPage })))
 const AnalyticsPage = lazy(() => import('./pages/Analytics/AnalyticsPage').then(module => ({ default: module.AnalyticsPage })))
 const ProfilePage = lazy(() => import('./pages/Profile/ProfilePage').then(module => ({ default: module.ProfilePage })))
+const HelpPage = lazy(() => import('./pages/Help/HelpPage').then(module => ({ default: module.HelpPage })))
+const NewScreeningPage = lazy(() => import('./pages/NewScreening/NewScreeningPage').then(module => ({ default: module.NewScreeningPage })))
 
 export default function App() {
   return (
@@ -26,6 +28,9 @@ export default function App() {
               <Route path="reports" element={<ReportsPage />} />
               <Route path="analytics" element={<AnalyticsPage />} />
               <Route path="profile" element={<ProfilePage />} />
+              <Route path="settings" element={<Navigate to="/profile" replace />} />
+              <Route path="help" element={<HelpPage />} />
+              <Route path="new-screening" element={<NewScreeningPage />} />
             </Route>
           </Routes>
         </Suspense>
