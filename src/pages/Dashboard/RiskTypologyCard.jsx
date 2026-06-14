@@ -5,7 +5,6 @@ import { GlassCard, LoadingSpinner } from '../../components/ui'
 export function RiskTypologyCard() {
   const { data, isLoading } = useRiskTypology()
 
-  const total = data?.reduce((sum, d) => sum + d.value, 0) ?? 0
 
   return (
     <GlassCard style={{ padding: 24 }}>

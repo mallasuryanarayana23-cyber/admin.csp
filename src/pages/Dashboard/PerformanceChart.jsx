@@ -5,7 +5,6 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  Legend,
 } from 'recharts'
 import { usePerformanceDistribution } from '../../hooks/useDashboard'
 import { GlassCard, LoadingSpinner } from '../../components/ui'

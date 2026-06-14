@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Lightbulb, X, Activity } from 'lucide-react'
+import { Lightbulb, X } from 'lucide-react'
 
 const REALTIME_EVENTS = [
   {

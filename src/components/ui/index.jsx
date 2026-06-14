@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 // ─────────────────────────────────────────────
 // Shared UI primitives
 // ─────────────────────────────────────────────
@@ -141,3 +142,7 @@ export function GlassCard({ children, className = '', style = {} }) {
     </div>
   )
 }
+
+export * from './ToastProvider'
+export * from './AppStateProvider'
+export * from './ErrorBoundary'

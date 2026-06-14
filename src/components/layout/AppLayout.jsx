@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom'
 import { Sidebar } from './Sidebar'
 import { TopBar } from './TopBar'
 import { InsightsPanel } from '../ui/InsightsPanel'
+import { ErrorBoundary } from '../ui'
 
 export function AppLayout() {
   return (
@@ -10,7 +11,9 @@ export function AppLayout() {
       <div className="flex flex-col flex-1" style={{ marginLeft: '256px' }}>
         <TopBar />
         <main className="flex-1 p-6 space-y-6 max-w-7xl mx-auto w-full">
-          <Outlet />
+          <ErrorBoundary>
+            <Outlet />
+          </ErrorBoundary>
         </main>
         <Footer />
       </div>
